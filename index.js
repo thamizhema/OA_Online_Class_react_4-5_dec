@@ -1,4 +1,7 @@
-require("./src/my_array");
+// require("./src/my_array");
+// require("./src/my_object");
+require("./src/my_function");
+
 // Git
 // Array
 // Object
