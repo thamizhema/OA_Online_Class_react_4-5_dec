@@ -5,10 +5,22 @@ import MyInput from "./components/common/MyInput";
 import About from "./components/About/About";
 import Card from "./components/Card";
 import { myData } from "./components/constents";
+import Task1 from "./components/Task/Task1";
+
 export default function App() {
   return (
-    <div className="app">
-      <div class="all-card" style={{ display: "flex", flexWrap: "wrap" }}>
+    <div
+      className="app"
+      style={{
+        background: "red",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Task1 val={100} />
+      {/* <div class="all-card" style={{ display: "flex", flexWrap: "wrap" }}>
         {myData.map((item) => {
           console.log(item);
           return (
@@ -37,7 +49,7 @@ export default function App() {
         hintText="Password"
         lable="Password"
         type="password"
-      />
+      /> */}
     </div>
   );
 }
