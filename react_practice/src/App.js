@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Card from "./components/Card";
 import { myData } from "./components/constents";
 import Task1 from "./components/Task/Task1";
+import TaskClass from "./components/Task/TaskClass";
+import InputHandle from "./components/Task/InputHandle";
 
 export default function App() {
   return (
@@ -15,11 +17,14 @@ export default function App() {
         background: "red",
         height: "100vh",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <Task1 val={100} />
+      <InputHandle />
+      {/* <TaskClass /> */}
+      {/* <Task1 val={100} /> */}
       {/* <div class="all-card" style={{ display: "flex", flexWrap: "wrap" }}>
         {myData.map((item) => {
           console.log(item);

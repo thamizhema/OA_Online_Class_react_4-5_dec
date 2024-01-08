@@ -11,3 +11,13 @@
   align-items: center;
   gap: 20px;
 }
+.main-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background: teal;
+}
