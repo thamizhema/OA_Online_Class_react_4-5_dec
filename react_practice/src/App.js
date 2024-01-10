@@ -8,13 +8,14 @@ import { myData } from "./components/constents";
 import Task1 from "./components/Task/Task1";
 import TaskClass from "./components/Task/TaskClass";
 import InputHandle from "./components/Task/InputHandle";
+import APICall from "./components/APICall/APICall";
 
 export default function App() {
   return (
     <div
       className="app"
       style={{
-        background: "red",
+        background: "lightblue",
         height: "100vh",
         display: "flex",
         flexDirection: "column",
@@ -22,7 +23,8 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <InputHandle />
+      <APICall />
+      {/* <InputHandle /> */}
       {/* <TaskClass /> */}
       {/* <Task1 val={100} /> */}
       {/* <div class="all-card" style={{ display: "flex", flexWrap: "wrap" }}>
