@@ -38,7 +38,7 @@ export default function APICall() {
     console.log("use effect called");
   }, [test]);
   return (
-    <div>
+    <div className="api-call">
       <h1>{test ? "Good" : "Bad"}</h1>
       <button onClick={() => setTest(!test)}>toggel</button>
       <button onClick={axiosFunction}>axiosFunction</button>

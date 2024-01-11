@@ -9,21 +9,24 @@ import Task1 from "./components/Task/Task1";
 import TaskClass from "./components/Task/TaskClass";
 import InputHandle from "./components/Task/InputHandle";
 import APICall from "./components/APICall/APICall";
+import User from "./components/ClassComponents/User";
+import { useState } from "react";
 
 export default function App() {
+  const [visible, setVisible] = useState(true);
   return (
-    <div
-      className="app"
-      style={{
-        background: "lightblue",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <APICall />
+    <div className="app">
+      <button
+        onClick={() => {
+          setVisible(!visible);
+        }}
+      >
+        Change Visible state
+      </button>
+
+      {visible ? <User /> : <h1>No Data</h1>}
+
+      {/* <APICall /> */}
       {/* <InputHandle /> */}
       {/* <TaskClass /> */}
       {/* <Task1 val={100} /> */}

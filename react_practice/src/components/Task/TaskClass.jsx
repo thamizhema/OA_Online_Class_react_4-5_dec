@@ -27,6 +27,7 @@ export default class TaskClass extends Component {
   render() {
     return (
       <div>
+        <p>{this.my}</p>
         <h1>
           {this.state.username} Component {this.state.count}
         </h1>
