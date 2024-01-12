@@ -11,20 +11,14 @@ import InputHandle from "./components/Task/InputHandle";
 import APICall from "./components/APICall/APICall";
 import User from "./components/ClassComponents/User";
 import { useState } from "react";
+import MyUseRef from "./components/MyUseRef/MyUseRef";
 
 export default function App() {
   const [visible, setVisible] = useState(true);
   return (
     <div className="app">
-      <button
-        onClick={() => {
-          setVisible(!visible);
-        }}
-      >
-        Change Visible state
-      </button>
-
-      {visible ? <User /> : <h1>No Data</h1>}
+      <MyUseRef />
+      {/* {visible ? <User /> : <h1>No Data</h1>} */}
 
       {/* <APICall /> */}
       {/* <InputHandle /> */}
