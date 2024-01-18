@@ -1,0 +1,13 @@
+.icon-tile-div {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.icon-tile-div:hover {
+  background: #00000037;
+}
