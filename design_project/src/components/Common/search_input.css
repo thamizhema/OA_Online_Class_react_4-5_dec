@@ -1,0 +1,25 @@
+.search-div {
+  background: #f5f8fd;
+
+  display: flex;
+  height: 50px;
+  border-radius: 25px;
+  padding-inline: 20px;
+  align-items: center;
+  gap: 5px;
+  color: #a1b4cf;
+}
+.search-div input::placeholder {
+  color: #a1b4cf;
+}
+.search-div input {
+  flex: 1;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: #3c4c63;
+}
+.search-div .search-icon {
+  font-size: 22px;
+}

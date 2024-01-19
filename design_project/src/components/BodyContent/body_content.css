@@ -1,5 +1,18 @@
 .body-content-div {
   height: 100%;
   flex: 10;
-  background: yellow;
+  background: #ebf2fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.body-content-div .left-content-div,
+.right-content-div {
+  padding: 20px;
+}
+.body-content-div .left-content-div {
+  flex: 2;
+}
+.body-content-div .right-content-div {
+  flex: 1;
 }
