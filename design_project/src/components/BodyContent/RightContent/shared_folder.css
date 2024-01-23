@@ -1,0 +1,22 @@
+.all-user {
+  height: 50px;
+  width: fit-content;
+  display: flex;
+}
+.user-div {
+  height: 54px;
+  width: 30px;
+}
+.user-div .user {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: white;
+  overflow: hidden;
+}
+.user-div .user img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
