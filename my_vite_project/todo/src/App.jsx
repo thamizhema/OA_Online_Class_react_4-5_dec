@@ -8,15 +8,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddTask from "./Components/Dashboard/AddTask/AddTask";
 import Home from "./Components/Dashboard/Home/Home";
 import ViewTask from "./Components/Dashboard/AddTask/ViewTask/ViewTask";
+import Login from "./Components/Auth/Login";
 
 function App() {
   return (
     <BrowserRouter>
-      <Appbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/add_task" element={<AddTask />} />
-        <Route path="/view_task" element={<ViewTask />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Dashboard />}>
+          <Route path="" element={<Home />} />
+          <Route path="/add_task" element={<AddTask />} />
+        </Route>
+
+        {/* <Route path="/add_task" element={<AddTask />} />
+        <Route path="/view_task" element={<ViewTask />} /> */}
       </Routes>
     </BrowserRouter>
   );
