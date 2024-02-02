@@ -1,0 +1,32 @@
+.states {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .c_state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .o_state {
+    display: flex;
+    gap: 30px;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      &:nth-child(1) {
+        background: teal;
+      }
+      &:nth-child(2) {
+        background: lightcoral;
+      }
+      &:nth-child(3) {
+        background: lightblue;
+      }
+    }
+  }
+}

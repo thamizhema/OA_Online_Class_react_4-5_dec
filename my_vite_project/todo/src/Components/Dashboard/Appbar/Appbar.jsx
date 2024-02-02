@@ -14,6 +14,9 @@ export default function Appbar() {
       <li>
         <Link to="/login"> Logout</Link>
       </li>
+      <li>
+        <Link to="/state_task"> State Task</Link>
+      </li>
     </ul>
   );
 }
