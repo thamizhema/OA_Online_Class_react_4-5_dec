@@ -12,12 +12,13 @@ import APICall from "./components/APICall/APICall";
 import User from "./components/ClassComponents/User";
 import { useState } from "react";
 import MyUseRef from "./components/MyUseRef/MyUseRef";
+import TestMd from "./components/TestMd";
 
 export default function App() {
   const [visible, setVisible] = useState(true);
   return (
     <div className="app">
-      <MyUseRef />
+      <TestMd />
       {/* {visible ? <User /> : <h1>No Data</h1>} */}
 
       {/* <APICall /> */}

@@ -10,6 +10,7 @@ import Home from "./Components/Dashboard/Home/Home";
 import ViewTask from "./Components/Dashboard/AddTask/ViewTask/ViewTask";
 import Login from "./Components/Auth/Login";
 import StateTask from "./Components/StateTask/StateTask";
+import TestMd from "./Components/TestMd";
 
 // creatting a context
 export const CountContext = createContext();
@@ -28,7 +29,7 @@ function App() {
       <CountContext.Provider value={{ state, setState }}>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Dashboard />}>
+          <Route path="/" element={<TestMd />}>
             <Route path="" element={<Home />} />
             <Route path="/add_task" element={<AddTask />} />
           </Route>
